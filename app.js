@@ -19,7 +19,7 @@ console.log(args.file.split('/')[args.file.split('/').length-1]);
 var upload = new mpu({
     client: client,
     objectName: args.file.split('/')[args.file.split('/').length-1],
-    file: './fuck.aif'
+    file: args.file.split('/')[args.file.split('/').length-1]
 }, function(err, body) {
 	if ( err ) {
 		console.log(err);
